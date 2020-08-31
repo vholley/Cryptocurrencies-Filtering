@@ -134,13 +134,13 @@ largecaps = cap.query('market_cap_usd >= 10000000000')
 print(largecaps)
 
 
-
 # ## Merge categories
 # Most cryptocurrencies do not fit within Investopedia's definition
 
 # Define a function for counting different marketcaps from the "cap" Dataframe
 def capcount(query_string):
     return cap.query(query_string).count().id
+
 
 # Labels for the plot
 LABELS = ["big", "micro", "nano"]
